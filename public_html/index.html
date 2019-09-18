@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <h1>Mi aplicación Web</h1>
+        <fieldset id="rcorners2">
+            <legend>Ingrese los valores</legend>
+            <label for="n1">1er valor: </label>
+            <input id="n1" type="number" value="0" />
+            <label for="n2">2do valor: </label>
+            <input id="n2" type="number" value="0" />
+            <input type="button" value="Calcular" onclick="sumar();" />
+            <label id="res">Resultado: </label>
+        </fieldset>
+        
+        <!-- js -->
+        <script src="js/calculos.js" type="text/javascript"></script>
+    </body>
+</html>
