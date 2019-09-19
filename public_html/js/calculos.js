@@ -6,13 +6,20 @@
 
 function sumar() {
     var n1, n2, res;
+    var opc;
     
+    opc = document.getElementById("opc").value;
     n1 = parseFloat(document.getElementById("n1").value);
     n2 = parseFloat(document.getElementById("n2").value);
     
-    res = n1 + n2;
+    if(opc === 'Adición') {
+        res = n1 + n2;
+    } else if (opc === 'Sustracción'){
+        res = n1 - n2;
+    }
     
     //alert("Resultado: " + res);
+    document.getElementById("res").innerHTML = "";
     document.getElementById("res").innerHTML = "Resultado: " + res;
 }
 
